@@ -3,8 +3,8 @@ pipeline{
   stages {
       stage('build'){
           steps{
-          sh 'Hola TCS se esta descarago la app....'
-          sh 'rm -rf*'
+          sh 'echo Hola TCS se esta descarago la app....'
+          sh 'rm -rf *'
           checkout scm
           sh 'echo Compliar Maven'
           sh 'mvn complie'
